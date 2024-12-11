@@ -66,11 +66,11 @@ const Home = () => {
         </div>
 
         <div className="md:w-1/2 mt-8 md:mt-0">
-          <img
+          {/* <img
             src={BgProfile}
             alt="subash"
             className="w-80 h-80 object-cover rounded-full mx-auto"
-          />
+          /> */}
         </div>
       </div>
       <Features />
