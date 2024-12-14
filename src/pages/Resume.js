@@ -1,15 +1,10 @@
 import React from 'react'
-import Education from './Education'
+import TabSection from '../components/TabSection'
 
 const Resume = () => {
   return (
     <div>
-      <h1></h1>
-
-      <div>
-
-      </div>
-
+      <TabSection />
     </div>
   )
 }

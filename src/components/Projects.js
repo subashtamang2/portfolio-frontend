@@ -3,17 +3,17 @@ import { FaGithub, FaGlobe } from 'react-icons/fa'; // Import the icons
 
 const projects = [
   {
-    title: "SOCIAL MEDIA CLONE",
+    title: "DynamicEdu Portal",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!",
-    imageUrl: "path-to-your-image",
-    githubLink: "#",
+    imageUrl: "/images/dynamicedu-portal.png",
+    githubLink: "https://my-project-jf3b.vercel.app/",
     liveDemo: "#"
   },
   {
-    title: "E-COMMERCE WEBSITE",
+    title: "Personal Portfolio Website",
     description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!",
-    imageUrl: "path-to-your-image",
-    githubLink: "#",
+    imageUrl: "/images/portfolio.png",
+    githubLink: "https://portfolio-frontend-one-eta.vercel.app/",
     liveDemo: "#"
   },
   {
@@ -48,7 +48,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <div className="bg-gray-900 text-white py-12 px-4">
+    <div className="bg-charcoal text-white py-12 px-4">
       <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 max-w-7xl mx-auto">
         {projects.map((project, index) => (

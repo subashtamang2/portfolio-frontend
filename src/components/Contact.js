@@ -4,7 +4,7 @@ import ProfilePic from '../images/girlimg.jpg'
 
 const Contact = () => {
   return (
-    <div className="bg-gray-900 text-white py-10">
+    <div className="bg-charcoal text-white py-10">
       <h2 className="text-4xl font-semibold mb-6 text-center">Contact With Me</h2>
       <div className="container mx-auto max-w-7xl px-6 flex flex-col  md:flex-row justify-between  gap-10 items-center">
 

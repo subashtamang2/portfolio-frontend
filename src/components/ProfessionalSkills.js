@@ -1,8 +1,10 @@
 import React from 'react'
+import Skills from './Skills'
 
 const ProfessionalSkills = () => {
   return (
-    <div>ProfessionalSkills</div>
+    <div><Skills />
+    </div>
   )
 }
 
