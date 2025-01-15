@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import Certifications from "./components/Certifications";
 import ContactForm from "./pages/ContactForm";
 import Footer from "./components/Footer";
-import Resume from "./components/Resume";
+
 
 const App = () => {
   // Create references for each section
@@ -51,7 +51,7 @@ const App = () => {
         <ContactForm />
       </div>
       <Footer />
-      <Resume />
+
 
     </>
   );
