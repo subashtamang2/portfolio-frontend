@@ -1,76 +1,83 @@
-import React from 'react';
-import { FaGithub, FaGlobe } from 'react-icons/fa'; // Import the icons
+import React from "react";
 
-const projects = [
+const projectData = [
   {
-    title: "DynamicEdu Portal",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!",
-    imageUrl: "/images/dynamicedu-portal.png",
-    githubLink: "https://my-project-jf3b.vercel.app/",
-    liveDemo: "#"
+    id: 1,
+    title: "EduMeeting portal",
+    description: " Edu meeting is a web-based platform for educational institutions,built with MongoDb,Express.js,React.js,and Node.js. it offers features like Upcoming Meetings to view schedules,Meeting Details for event specifics,Courses section,Apply Now for student applications, and Contact Us for support. The p[latform also includes an Admin Panel designed for managing courses efficiently.",
+    techStack: ["React.js", "MongoDB", 'Node.js', 'Express.js', 'Tailwind CSS'],
+    image: "/images/dynamicedu-portal.png",
+    liveDemo: "https://my-project-jf3b.vercel.app/",
+    sourceCode: "https://github.com/SubashLama123/my-project",
   },
   {
+    id: 2,
     title: "Personal Portfolio Website",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!",
-    imageUrl: "/images/portfolio.png",
-    githubLink: "https://portfolio-frontend-one-eta.vercel.app/",
-    liveDemo: "#"
+    description: "Designed and developed an interactive personal portfolio to showcase projects,Skills,Resume and Contact.Built using React.js and Tailwind CSS Ui for a modern and responsive design.",
+    techStack: ["React.js", "tailwind CSS", 'Javascript'],
+    image: "/images/portfolio.png",
+    liveDemo: "project2-live-link",
+    sourceCode: "https://github.com/SubashLama123/portfolio-frontend",
   },
   {
-    title: "CHATTING APP",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!",
-    imageUrl: "path-to-your-image",
-    githubLink: "#",
-    liveDemo: "#"
+    id: 3,
+    title: "Comming SOON",
+    description: "A brief description of Project 3. Highlight the tools used and challenges solved.",
+    techStack: ["Tailwind CSS"],
+    image: "project3-thumbnail.jpg",
+    liveDemo: "project3-live-link",
+    sourceCode: "project3-source-code-link",
   },
-  {
-    title: "SOCIAL MEDIA CLONE",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!",
-    imageUrl: "path-to-your-image",
-    githubLink: "#",
-    liveDemo: "#"
-  },
-  {
-    title: "E-COMMERCE WEBSITE",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!",
-    imageUrl: "path-to-your-image",
-    githubLink: "#",
-    liveDemo: "#"
-  },
-  {
-    title: "CHATTING APP",
-    description: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quibusdam voluptate sapiente voluptatibus harum quidem!",
-    imageUrl: "path-to-your-image",
-    githubLink: "#",
-    liveDemo: "#"
-  },
+  // Add more projects here as needed
 ];
 
 const Projects = () => {
   return (
-    <div className="bg-charcoal text-white py-12 px-4">
-      <h2 className="text-3xl font-bold text-center mb-8">My Projects</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-14 max-w-7xl mx-auto">
-        {projects.map((project, index) => (
-          <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
-            <img src={project.imageUrl} alt={project.title} className="rounded-md mb-4 w-full h-48 object-cover" />
-
-            <div className='flex justify-between'>
-              <div>
-                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+    <div className="bg-gray-100 py-10 mx-auto max-w-7xl">
+      <h1 className="text-3xl font-bold text-center mb-8">Projects</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-6">
+        {projectData.map((project) => (
+          <div
+            key={project.id}
+            className="bg-white shadow-md rounded-lg overflow-hidden hover:shadow-lg transition-shadow"
+          >
+            <img
+              src={project.image}
+              alt={`${project.title} Thumbnail`}
+              className="w-full h-48 object-cover"
+            />
+            <div className="p-4">
+              <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
+              <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+              <div className="flex flex-wrap gap-2 mb-4">
+                {project.techStack.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="bg-blue-100 text-blue-600 text-xs font-medium px-2 py-1 rounded"
+                  >
+                    {tech}
+                  </span>
+                ))}
               </div>
-
-              <div className="flex items-center gap-5">
-                <a href={project.githubLink} className="text-gray-500 hover:text-gray-300 transition-colors duration-300">
-                  <FaGithub size={24} /> {/* GitHub icon */}
+              <div className="flex justify-between items-center">
+                <a
+                  href={project.liveDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-blue-500 text-white text-sm px-4 py-2 rounded hover:bg-blue-600 transition"
+                >
+                  View Live
                 </a>
-                <a href={project.liveDemo} className="text-gray-500 hover:text-gray-300 transition-colors duration-300">
-                  <FaGlobe size={24} /> {/* Globe icon */}
+                <a
+                  href={project.sourceCode}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-gray-500 text-white text-sm px-4 py-2 rounded hover:bg-gray-600 transition"
+                >
+                  Source Code
                 </a>
               </div>
             </div>
-            <p className="text-gray-400 mb-4">{project.description}</p>
-
           </div>
         ))}
       </div>

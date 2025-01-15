@@ -1,34 +1,60 @@
-import React from 'react';
-import Navbar from './components/Navbar';
-import { Route, Routes } from 'react-router-dom';
-import About from './components/About';
-import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Contact from './components/Contact';
-import Features from './components/Features';
-import Resume from './components/Resume';
-import Home from './pages/Home';
+import React, { useRef } from "react";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Certifications from "./components/Certifications";
+import ContactForm from "./pages/ContactForm";
+import Footer from "./components/Footer";
+import Resume from "./components/Resume";
 
 const App = () => {
+  // Create references for each section
+  const homeRef = useRef(null);
+  const projectsRef = useRef(null);
+  const skillsRef = useRef(null);
+  const certificationsRef = useRef(null);
+  const contactRef = useRef(null);
+
+  // Function to handle scrolling
+  const scrollToSection = (ref) => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <Navbar />
-
-      <div className="container mx-auto ">
-
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path='/features' element={<Features />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+      {/* Pass scrollToSection and references to Navbar */}
+      <Navbar
+        scrollToSection={scrollToSection}
+        sections={{
+          homeRef,
+          projectsRef,
+          skillsRef,
+          certificationsRef,
+          contactRef,
+        }}
+      />
+      {/* Each section with its respective ref */}
+      <div ref={homeRef} id="home">
+        <Home />
       </div>
+      <div ref={projectsRef} id="projects">
+        <Projects />
+      </div>
+      <div ref={skillsRef} id="skills">
+        <Skills />
+      </div>
+      <div ref={certificationsRef} id="certifications">
+        <Certifications />
+      </div>
+      <div ref={contactRef} id="contact">
+        <ContactForm />
+      </div>
+      <Footer />
+      <Resume />
+
     </>
   );
-}
+};
 
 export default App;

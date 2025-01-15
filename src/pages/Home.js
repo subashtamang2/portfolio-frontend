@@ -1,41 +1,23 @@
-import React from 'react'
-import TypingEffect from '../components/TypingEffect'
-import SocialIcons from '../components/SocialIcons'
-import Features from '../components/Features'
-import Projects from '../components/Projects'
-import Resume from '../components/Resume'
-import Contact from '../components/Contact'
-import Footer from '../components/Footer'
-import TabSection from '../components/TabSection'
-import Navbar from '../components/Navbar'
+import React from 'react';
+import TypingEffect from '../components/TypingEffect';
+import SocialIcons from '../components/SocialIcons';
+import BgProfile from '../components/BgProfile';
 
 const Home = () => {
   return (
-    <div>
-      <div className="bg-charcoal text-white ">
-        <div className='grid grid-cols-2 mx-auto max-w-6xl'>
-          <div>
-            <TypingEffect />
-            <SocialIcons />
-          </div>
-          <div className='p-4 md:p-4 mt-10 md:mt-28 text-lg  md:text-2xl '>
-            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rem deserunt dolore repellat nisi quis, corporis vel assumenda libero consectetur eligendi voluptatibus, blanditiis tempore distinctio ea laudantium et ipsa aliquam, voluptas repudiandae commodi? Reprehenderit possimus facere nam cupiditate, ex consequuntur ut repellat voluptatibus eos dicta quaerat quae, sed fugiat iusto vitae.</h1>
-          </div>
-
-        </div>
-
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-7xl p-6 md:p-10 my-10 md:my-20">
+      {/* BgProfile at the top for small screens */}
+      <div className="order-1 md:order-2 flex justify-center">
+        <BgProfile />
       </div>
-      <Features />
-      <Projects />
-      <TabSection />
 
-      <Contact />
-
-      <Footer />
-
-
+      {/* Content section */}
+      <div className="order-2 md:order-1 flex flex-col items-center md:items-start text-center md:text-left">
+        <TypingEffect />
+        <SocialIcons />
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
