@@ -1,5 +1,5 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaFacebookF, FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { SiReact, SiNextdotjs, SiTailwindcss, SiFigma } from "react-icons/si";
 
 const SocialIcons = () => {
@@ -7,7 +7,7 @@ const SocialIcons = () => {
     <div className="mx-auto max-w-7xl flex flex-col lg:flex-row gap-10 items-center mt-20">
       {/* FIND ME IN Section */}
       <div className="text-center">
-        <h3 className="font-bold text-gray-500 mb-5">FIND ME IN</h3>
+        <h3 className="font-bold text-gray-700 mb-5">FIND ME IN</h3>
         <div className="flex justify-center flex-wrap gap-4 lg:gap-6">
           {/* Facebook */}
           <a
@@ -41,7 +41,7 @@ const SocialIcons = () => {
 
       {/* BEST SKILL ON Section */}
       <div className="text-center">
-        <h3 className="font-bold text-gray-500 mb-5">BEST SKILL ON</h3>
+        <h3 className="font-bold text-gray-700 mb-5">BEST SKILL ON</h3>
         <div className="flex justify-center flex-wrap gap-4 lg:gap-6">
           {/* React */}
           <div className="bg-blue-500 text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-blue-400">

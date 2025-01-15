@@ -16,7 +16,7 @@ const projectData = [
     description: "Designed and developed an interactive personal portfolio to showcase projects,Skills,Resume and Contact.Built using React.js and Tailwind CSS Ui for a modern and responsive design.",
     techStack: ["React.js", "tailwind CSS", 'Javascript'],
     image: "/images/portfolio.png",
-    liveDemo: "project2-live-link",
+    liveDemo: "https://portfolio-frontend-one-eta.vercel.app/",
     sourceCode: "https://github.com/SubashLama123/portfolio-frontend",
   },
   {

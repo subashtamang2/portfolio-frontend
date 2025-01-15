@@ -14,7 +14,7 @@ const Navbar = ({ scrollToSection, sections }) => {
           <img
             src={ProfileImage}
             alt="Logo"
-            className="h-10 w-10 object-cover rounded-full"
+            className="h-10 w-10 object-cover rounded-full border-4 border-blue-400"
           />
         </div>
 

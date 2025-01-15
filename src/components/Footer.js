@@ -10,7 +10,7 @@ const Footer = () => {
           <h3 className="text-lg font-semibold mb-4 text-gray-100">Explore</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#about" className="hover:text-yellow-400 transition duration-300">
+              <a href="#home" className="hover:text-yellow-400 transition duration-300">
                 About Me
               </a>
             </li>
@@ -92,7 +92,7 @@ const Footer = () => {
               href="https://www.instagram.com/tamangsubash387/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-12 h-12 flex justify-center items-center border border-white rounded-full bg-pink-600 text-white hover:bg-pink-500 transition duration-300"
+              className="w-12 h-12 flex justify-center items-center border border-white rounded-full bg-blue-700 text-white hover:bg-blue-600 transition duration-300"
               aria-label="Instagram"
             >
               <i className="fab fa-instagram text-xl"></i>
