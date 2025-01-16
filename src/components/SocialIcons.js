@@ -11,7 +11,7 @@ const SocialIcons = () => {
         <div className="flex justify-center flex-wrap gap-4 lg:gap-6">
           {/* Facebook */}
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/profile.php?id=100024965704794"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-600 text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-blue-500"
@@ -20,7 +20,7 @@ const SocialIcons = () => {
           </a>
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/subash-tamang-7a751327a/"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-blue-700 text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-blue-600"
@@ -29,7 +29,7 @@ const SocialIcons = () => {
           </a>
           {/* GitHub */}
           <a
-            href="https://github.com"
+            href="https://github.com/SubashLama123"
             target="_blank"
             rel="noopener noreferrer"
             className="bg-gray-800 text-white w-12 h-12 flex items-center justify-center rounded-full hover:bg-gray-700"

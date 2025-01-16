@@ -16,17 +16,17 @@ const projectData = [
     description: "Designed and developed an interactive personal portfolio to showcase projects,Skills,Resume and Contact.Built using React.js and Tailwind CSS Ui for a modern and responsive design.",
     techStack: ["React.js", "tailwind CSS", 'Javascript'],
     image: "/images/portfolio.png",
-    liveDemo: "https://portfolio-frontend-one-eta.vercel.app/",
+    liveDemo: "https://portfolio-frontend-one-eta.vercel.app//",
     sourceCode: "https://github.com/SubashLama123/portfolio-frontend",
   },
   {
     id: 3,
-    title: "Comming SOON",
-    description: "A brief description of Project 3. Highlight the tools used and challenges solved.",
-    techStack: ["Tailwind CSS"],
-    image: "project3-thumbnail.jpg",
-    liveDemo: "project3-live-link",
-    sourceCode: "project3-source-code-link",
+    title: "Todo List",
+    description: "The To-Do list app,built with react and Redux,enables users to manage tasks using CRUD operations. We can add new tasks with text and images and we can easily  delete and update them. ",
+    techStack: ["Tailwind CSS", "React.Js",],
+    image: "/images/todo.png",
+    liveDemo: "https://learn-react-idv39h0rl-subash-tamangs-projects.vercel.app/",
+    sourceCode: "https://github.com/SubashLama123/learn-react/tree/todo-app",
   },
   // Add more projects here as needed
 ];
@@ -48,7 +48,7 @@ const Projects = () => {
             />
             <div className="p-4">
               <h2 className="text-xl font-semibold mb-2">{project.title}</h2>
-              <p className="text-gray-600 text-sm mb-4">{project.description}</p>
+              <p className="text-gray-700 text-base mb-4">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.techStack.map((tech, index) => (
                   <span

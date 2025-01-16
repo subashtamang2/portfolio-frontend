@@ -5,9 +5,9 @@ import BgProfile from '../components/BgProfile';
 
 const Home = () => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-7xl p-6 md:p-10 my-10 md:my-20">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mx-auto max-w-7xl p-6 md:p-10 my-10 md:my-30">
       {/* BgProfile at the top for small screens */}
-      <div className="order-1 md:order-2 flex justify-center">
+      <div className="order-1 md:order-2 flex justify-center ">
         <BgProfile />
       </div>
 
