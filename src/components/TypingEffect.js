@@ -23,7 +23,7 @@ const TypingEffect = () => {
             <span style={{ fontWeight: 'bold', color: 'red' }}>{typeEffect}</span>
             <Cursor cursorColor="black" /> {/* Blinking cursor */}
           </h2>
-          <h4 className="text-xl "> a 5th-semester Bachelor's student at Texas College of Management and IT. I'm an aspiring MERN Stack Developer with a strong interest in both front-end and back-end development.
+          <h4 className="text-xl "> a 6th-semester Bachelor's student at Texas College of Management and IT. I'm an aspiring MERN Stack Developer with a strong interest in both front-end and back-end development.
             I'm passionate about building responsive websites using HTML, CSS, JavaScript, React.js, Node.js, Express.js, and MongoDB. While I'm still learning, I’m eager to apply my skills and grow through real-world projects and collaborations.
 
           </h4>
