@@ -29,17 +29,9 @@ const projectData = [
     liveDemo: "https://my-project-jf3b.vercel.app/",
     sourceCode: "https://github.com/SubashLama123/my-project",
   },
+
   {
     id: 4,
-    title: "Personal Portfolio Website",
-    description: "Designed and developed an interactive personal portfolio to showcase projects,Skills,Resume and Contact.Built using React.js and Tailwind CSS Ui for a modern and responsive design.",
-    techStack: ["React.js", "tailwind CSS", 'Javascript'],
-    image: "/images/portfolio.png",
-    liveDemo: "https://portfolio-frontend-one-eta.vercel.app//",
-    sourceCode: "https://github.com/SubashLama123/portfolio-frontend",
-  },
-  {
-    id: 5,
     title: "Todo List",
     description: "The To-Do list app,built with react and Redux,enables users to manage tasks using CRUD operations. We can add new tasks with text and images and we can easily  delete and update them. ",
     techStack: ["Tailwind CSS", "React.Js",],
