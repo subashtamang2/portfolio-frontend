@@ -3,7 +3,7 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 const TypingEffect = () => {
   const [typeEffect] = useTypewriter({
-    words: ["  Web Developer", "  Graphic Designer", "WordPress Designer"],
+    words: ["  Web Developer", "WordPress Designer"],
     loop: true,
     typeSpeed: 100,
     deleteSpeed: 40,
